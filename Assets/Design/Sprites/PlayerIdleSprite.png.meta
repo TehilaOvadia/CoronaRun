@@ -4,25 +4,22 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -4492884831140083451
-    second: PlayerIdleSprite_0
+    second: Body
   - first:
       213: -7329008813041629755
-    second: PlayerIdleSprite_1
+    second: LeftHand
   - first:
       213: -137985868952385526
-    second: PlayerIdleSprite_2
+    second: RightHand
   - first:
       213: 3507531259036202343
-    second: PlayerIdleSprite_3
+    second: LeftLeg
   - first:
       213: 4042311707307983172
-    second: PlayerIdleSprite_4
+    second: RightLeg
   - first:
       213: -7567070328416920238
-    second: PlayerIdleSprite_5
-  - first:
-      213: 7609486594200111310
-    second: PlayerIdleSprite_6
+    second: Head
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -146,15 +143,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerIdleSprite_0
+      name: Body
       rect:
         serializedVersion: 2
-        x: 12
-        y: 11
-        width: 275
-        height: 534
+        x: 31
+        y: 297
+        width: 159
+        height: 208
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,15 +164,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerIdleSprite_1
+      name: LeftHand
       rect:
         serializedVersion: 2
-        x: 328
-        y: 11
-        width: 267
-        height: 519
+        x: 260
+        y: 356
+        width: 74
+        height: 153
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,15 +185,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerIdleSprite_2
+      name: RightHand
       rect:
         serializedVersion: 2
-        x: 644
-        y: 11
-        width: 259
-        height: 503
+        x: 428
+        y: 389
+        width: 126
+        height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,15 +206,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerIdleSprite_3
+      name: LeftLeg
       rect:
         serializedVersion: 2
-        x: 960
-        y: 10
-        width: 251
-        height: 491
+        x: 40
+        y: 75
+        width: 57
+        height: 165
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,15 +227,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerIdleSprite_4
+      name: RightLeg
       rect:
         serializedVersion: 2
-        x: 1268
-        y: 11
-        width: 259
-        height: 503
+        x: 152
+        y: 83
+        width: 55
+        height: 158
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,15 +248,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerIdleSprite_5
+      name: Head
       rect:
         serializedVersion: 2
-        x: 1576
-        y: 11
-        width: 267
-        height: 519
+        x: 311
+        y: 23
+        width: 236
+        height: 318
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -267,27 +264,6 @@ TextureImporter:
       bones: []
       spriteID: 25d9f4cd0ad5cf690800000000000000
       internalID: -7567070328416920238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerIdleSprite_6
-      rect:
-        serializedVersion: 2
-        x: 1884
-        y: 11
-        width: 275
-        height: 534
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec8056a9db35a9960800000000000000
-      internalID: 7609486594200111310
       vertices: []
       indices: 
       edges: []
