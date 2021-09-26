@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Checkpoint
+  - Door
+  - Syringe
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -13,10 +18,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Obstacle
+  - Enemy
+  - Ground
   - 
   - 
   - 
@@ -38,6 +43,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1594306811
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Midground
+    uniqueID: 954244889
+    locked: 0
+  - name: Foreground
+    uniqueID: 3585309047
+    locked: 0
+  - name: Player
+    uniqueID: 2593472555
     locked: 0
