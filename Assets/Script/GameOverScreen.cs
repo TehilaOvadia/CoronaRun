@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScreen : MonoBehaviour
 {
+    LevelManager gameLevelManager;
+
     public void SetUp()
     {
         gameObject.SetActive(true);
@@ -17,6 +19,8 @@ public class GameOverScreen : MonoBehaviour
 
     public void ExitButton()
     {
+        gameLevelManager.SaveGameData();
+
         SceneManager.LoadScene("MainMenu");
     }
 }

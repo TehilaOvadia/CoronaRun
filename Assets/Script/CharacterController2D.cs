@@ -10,8 +10,8 @@ public class CharacterController2D : MonoBehaviour
 
 	public Vector3 respawnPoint;
 
-	public LevelManager gameLevelManager;
-	public SyringeScript syringeManager;
+	LevelManager gameLevelManager;
+	SyringeScript syringeManager;
 
     private void Awake()
     {

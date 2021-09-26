@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
-    public CharacterController2D gamePlayer;
+    CharacterController2D gamePlayer;
+    LevelManager gameLevelManager;
+
     public GameOverScreen gameOverScreen;
-    public LevelManager gameLevelManager;
     public GameObject LevelDetails;
     public Text lifeAmount;
 
