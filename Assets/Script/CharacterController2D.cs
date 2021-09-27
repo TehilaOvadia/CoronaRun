@@ -9,6 +9,7 @@ public class CharacterController2D : MonoBehaviour
 	public bool enemyHasCollide;
 
 	public Vector3 respawnPoint;
+	public GameObject player;
 
 	LevelManager gameLevelManager;
 	SyringeScript syringeManager;
@@ -17,9 +18,9 @@ public class CharacterController2D : MonoBehaviour
     {
 		gameLevelManager = FindObjectOfType<LevelManager>();
 		syringeManager = FindObjectOfType<SyringeScript>();
-	}
+    }
 
-    private void Start()
+	private void Start()
     {
 		respawnPoint = transform.position;
     }
@@ -49,6 +50,19 @@ public class CharacterController2D : MonoBehaviour
 					gameLevelManager.GameOver();
 				}
             }
+		}
+
+		if(other.gameObject.tag == "Platform")
+        {
+			player.transform.parent = other.gameObject.transform;
+		}
+	}
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+		if (other.gameObject.tag == "Platform")
+		{
+			player.transform.parent = null;
 		}
 	}
 

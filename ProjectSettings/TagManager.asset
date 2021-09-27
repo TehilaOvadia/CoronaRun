@@ -9,6 +9,7 @@ TagManager:
   - Door
   - Syringe
   - Ground
+  - Platform
   layers:
   - Default
   - TransparentFX

@@ -395,8 +395,7 @@ MonoBehaviour:
   isHarmed: 0
   enemyHasCollide: 0
   respawnPoint: {x: 0, y: 0, z: 0}
-  gameLevelManager: {fileID: 0}
-  syringeManager: {fileID: 0}
+  player: {fileID: 121555286704603906}
 --- !u!1 &1977474913055280763
 GameObject:
   m_ObjectHideFlags: 0

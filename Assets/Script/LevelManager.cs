@@ -25,9 +25,11 @@ public class LevelManager : MonoBehaviour
 
         LoadGameData();
 
-        Debug.Log("Health: " + healthAmount);
-        Debug.Log("Has syringe: " + hasSyringe);
-        Debug.Log("Level num: " + levelNum);
+        //levelNum = SceneManager.GetActiveScene().buildIndex;
+
+        //Debug.Log("Health: " + healthAmount);
+        //Debug.Log("Has syringe: " + hasSyringe);
+        //Debug.Log("Level num: " + levelNum);
     }
 
     public void SaveGameData()

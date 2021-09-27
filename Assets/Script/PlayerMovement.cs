@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     bool jump = false;
     public bool isFalling = false;
-    //bool isWalk = false;
 
     Rigidbody2D rb;
 
@@ -78,7 +77,6 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             animator.SetFloat("Speed", 0);
-            //isWalk = false;
         }
 
         //Jumping animation
