@@ -1508,51 +1508,11 @@ Transform:
   m_Father: {fileID: 1579928558}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &813073938 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2713507992097607881, guid: 3407a40863a0e4f4d9ce40351e97a127, type: 3}
-  m_PrefabInstance: {fileID: 1836343282}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &813073939 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2713507992097607882, guid: 3407a40863a0e4f4d9ce40351e97a127, type: 3}
   m_PrefabInstance: {fileID: 1836343282}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &813073940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813073938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46150f973cb044b5981e3b383bc2a359, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 15
-  startWaitTime: 0
-  moveSpots: {fileID: 1085944433}
-  minX: -27
-  maxX: 36
-  minY: 111
-  maxY: 200
---- !u!58 &813073941
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813073938}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -6.172638, y: 1.2724457}
-  serializedVersion: 2
-  m_Radius: 1.453434
 --- !u!1001 &897881581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3769,6 +3729,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1004196201}
     m_Modifications:
+    - target: {fileID: 813073940, guid: 3407a40863a0e4f4d9ce40351e97a127, type: 3}
+      propertyPath: moveSpots
+      value: 
+      objectReference: {fileID: 1085944433}
     - target: {fileID: 2713507992097607881, guid: 3407a40863a0e4f4d9ce40351e97a127, type: 3}
       propertyPath: m_Name
       value: ZombieVirusGFX
