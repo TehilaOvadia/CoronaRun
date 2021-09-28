@@ -13,6 +13,9 @@ public class LevelManager : MonoBehaviour
     public GameObject LevelDetails;
     public Text lifeAmount;
 
+    public Animator sceneTransition;
+    public float transitionTime = 1f;
+
     public float respawnDelay;
     public int healthAmount;
     public int levelNum;
@@ -93,9 +96,21 @@ public class LevelManager : MonoBehaviour
         levelNum += 1;
         gamePlayer.isDoorOpen = true;
         yield return new WaitForSeconds(3f);
+        LoadSceneTransition();
         SceneManager.LoadScene(levelNum);
 
         SaveGameData();
+    }
+
+    public void LoadSceneTransition()
+    {
+        StartCoroutine("LoadSceneTransitionCoroutine");
+    }
+
+    public IEnumerator LoadSceneTransitionCoroutine()
+    {
+        sceneTransition.SetTrigger("EndScene");
+        yield return new WaitForSeconds(transitionTime);
     }
 
     public void GameOver()

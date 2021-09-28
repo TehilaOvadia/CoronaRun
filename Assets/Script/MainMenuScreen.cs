@@ -18,10 +18,12 @@ public class MainMenuScreen : MonoBehaviour
 
         if (gameLevelManager != null)
         {
+            gameLevelManager.LoadSceneTransition();
             SceneManager.LoadScene(gameLevelManager.levelNum);
         }
         else
         {
+            gameLevelManager.LoadSceneTransition();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
             gameLevelManager.healthAmount = 5;
