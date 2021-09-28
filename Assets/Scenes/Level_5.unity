@@ -1804,6 +1804,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 95201456}
     m_Modifications:
+    - target: {fileID: 1674811897, guid: 06bc4dc472907405ba1b18072daa42a3, type: 3}
+      propertyPath: moveSpots
+      value: 
+      objectReference: {fileID: 141894573}
     - target: {fileID: 3178121532562565712, guid: 06bc4dc472907405ba1b18072daa42a3, type: 3}
       propertyPath: m_Name
       value: TeethVirusGFX
@@ -1852,10 +1856,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1946826525, guid: 06bc4dc472907405ba1b18072daa42a3, type: 3}
-    - {fileID: 1946826523, guid: 06bc4dc472907405ba1b18072daa42a3, type: 3}
-    - {fileID: 1946826522, guid: 06bc4dc472907405ba1b18072daa42a3, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06bc4dc472907405ba1b18072daa42a3, type: 3}
 --- !u!1001 &706169501
 PrefabInstance:
@@ -3809,35 +3810,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8654703116820029545, guid: 3fad6b8ffe0bb4934b83a1081282685c, type: 3}
   m_PrefabInstance: {fileID: 1657444640}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1674811895 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3178121532562565712, guid: 06bc4dc472907405ba1b18072daa42a3, type: 3}
-  m_PrefabInstance: {fileID: 701454343}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1674811896 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3178121532562565719, guid: 06bc4dc472907405ba1b18072daa42a3, type: 3}
   m_PrefabInstance: {fileID: 701454343}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1674811897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674811895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46150f973cb044b5981e3b383bc2a359, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 25
-  startWaitTime: 0
-  moveSpots: {fileID: 141894573}
-  minX: -33
-  maxX: 36
-  minY: 68
-  maxY: 200
 --- !u!1001 &1678248188
 PrefabInstance:
   m_ObjectHideFlags: 0

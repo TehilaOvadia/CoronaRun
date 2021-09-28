@@ -131,6 +131,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
+        //if()
         rb.velocity = new Vector2(moveSpeed * horizontalMove, rb.velocity.y);
     }
 
