@@ -7,14 +7,11 @@ using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
 {
     CharacterController2D gamePlayer;
-    LevelManager gameLevelManager;
+    SceneTransition endSceneTransition;
 
     public GameOverScreen gameOverScreen;
     public GameObject LevelDetails;
     public Text lifeAmount;
-
-    public Animator sceneTransition;
-    public float transitionTime = 1f;
 
     public float respawnDelay;
     public int healthAmount;
@@ -24,7 +21,7 @@ public class LevelManager : MonoBehaviour
     private void Awake()
     {
         gamePlayer = FindObjectOfType<CharacterController2D>();
-        gameLevelManager = FindObjectOfType<LevelManager>();
+        endSceneTransition = FindObjectOfType<SceneTransition>();
 
         LoadGameData();
 
@@ -34,6 +31,11 @@ public class LevelManager : MonoBehaviour
         //Debug.Log("Has syringe: " + hasSyringe);
         //Debug.Log("Level num: " + levelNum);
     }
+
+    //private void Start()
+    //{
+    //    sceneTransition.SetUp();
+    //}
 
     public void SaveGameData()
     {
@@ -94,23 +96,12 @@ public class LevelManager : MonoBehaviour
     public IEnumerator NextLevelCoroutine()
     {
         levelNum += 1;
+        SaveGameData();
         gamePlayer.isDoorOpen = true;
         yield return new WaitForSeconds(3f);
-        LoadSceneTransition();
+        //Scene transition
+        endSceneTransition.EndScene();
         SceneManager.LoadScene(levelNum);
-
-        SaveGameData();
-    }
-
-    public void LoadSceneTransition()
-    {
-        StartCoroutine("LoadSceneTransitionCoroutine");
-    }
-
-    public IEnumerator LoadSceneTransitionCoroutine()
-    {
-        sceneTransition.SetTrigger("EndScene");
-        yield return new WaitForSeconds(transitionTime);
     }
 
     public void GameOver()
@@ -118,7 +109,7 @@ public class LevelManager : MonoBehaviour
         gameOverScreen.SetUp();
         gamePlayer.isDead = true;
 
-        gameLevelManager.healthAmount = 5;
+        healthAmount = 5;
         SaveGameData();
     }
 }

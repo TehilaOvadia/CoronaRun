@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class GameOverScreen : MonoBehaviour
 {
     LevelManager gameLevelManager;
+    SceneTransition endSceneTransition;
 
     private void Awake()
     {
         gameLevelManager = FindObjectOfType<LevelManager>();
+        endSceneTransition = FindObjectOfType<SceneTransition>();
     }
 
     public void SetUp()
@@ -19,14 +21,16 @@ public class GameOverScreen : MonoBehaviour
 
     public void RestartButton()
     {
-        gameLevelManager.LoadSceneTransition();
+        //Scene transition
+        endSceneTransition.EndScene();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void ExitButton()
     {
         gameLevelManager.SaveGameData();
-        gameLevelManager.LoadSceneTransition();
+        //Scene transition
+        endSceneTransition.EndScene();
 
         SceneManager.LoadScene("MainMenu");
     }

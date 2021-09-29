@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !controller.isDead && !controller.isDoorOpen)
         {
             jump = true;
             //AudioManager.instance.Play("Jump");
@@ -48,9 +48,12 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        horizontalMove = Input.GetAxis("Horizontal");
+        if (!controller.isDead && !controller.isDoorOpen)
+        {
+            horizontalMove = Input.GetAxis("Horizontal");
 
-        transform.Translate(horizontalMove * moveSpeed, 0, 0);
+            transform.Translate(horizontalMove * moveSpeed, 0, 0);
+        }
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.5f, groundLayer);
 
@@ -131,7 +134,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        //if()
         rb.velocity = new Vector2(moveSpeed * horizontalMove, rb.velocity.y);
     }
 

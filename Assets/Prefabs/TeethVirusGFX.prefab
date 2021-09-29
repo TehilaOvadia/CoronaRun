@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3178121532562565718}
   - component: {fileID: -3616687262996930595}
   - component: {fileID: 1946826524}
-  - component: {fileID: 1674811897}
   m_Layer: 10
   m_Name: TeethVirusGFX
   m_TagString: Enemy
@@ -125,25 +124,6 @@ CircleCollider2D:
   m_Offset: {x: 0.90955544, y: 2.7057395}
   serializedVersion: 2
   m_Radius: 1.501276
---- !u!114 &1674811897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3178121532562565712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46150f973cb044b5981e3b383bc2a359, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 25
-  startWaitTime: 0
-  moveSpots: {fileID: 0}
-  minX: -33
-  maxX: 36
-  minY: 68
-  maxY: 200
 --- !u!1 &3178121532594009263
 GameObject:
   m_ObjectHideFlags: 0

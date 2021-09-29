@@ -71,7 +71,10 @@ public class CharacterController2D : MonoBehaviour
         switch (other.tag)
         {
 			case "Checkpoint":
-				respawnPoint = other.transform.position;
+				if(respawnPoint.y < other.transform.position.y)
+                {
+					respawnPoint = other.transform.position;
+                }
 				break;
 			case "Door":
 				gameLevelManager.NextLevel();
