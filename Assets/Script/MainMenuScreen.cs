@@ -22,13 +22,6 @@ public class MainMenuScreen : MonoBehaviour
         {
             //Scene transition
             endSceneTransition.EndScene();
-            //Debug.Log("not entered");
-
-            gameLevelManager.healthAmount = 5;
-            gameLevelManager.hasSyringe = false;
-            gameLevelManager.levelNum = SceneManager.GetActiveScene().buildIndex + 1;
-
-            gameLevelManager.SaveGameData();
 
             SceneManager.LoadScene(gameLevelManager.levelNum);
         }

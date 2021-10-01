@@ -68,6 +68,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/Script/PlayerMovement.cs" />
+    <Compile Include="Assets/Script/SceneTransition.cs" />
     <Compile Include="Assets/Script/MovingPlatform.cs" />
     <Compile Include="Assets/Script/AudioManager.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets/Script/RandomMovement.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
     <Compile Include="Assets/Script/FadeOutScript.cs" />
+    <Compile Include="Assets/Script/SettingMenu.cs" />
     <Compile Include="Assets/Script/CharacterController2D.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
@@ -107,7 +109,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
     <Compile Include="Assets/Script/CheckpointController.cs" />
     <Compile Include="Assets/Script/DoorController.cs" />
-    <Compile Include="Assets/Script/SceneTransition.cs" />
+    <Compile Include="Assets/Script/ComingSoon.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

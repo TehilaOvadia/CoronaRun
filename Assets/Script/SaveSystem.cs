@@ -19,6 +19,7 @@ public static class SaveSystem
 
     public static GameData LoadGameData()
     {
+        //Debug.Log(Application.persistentDataPath);
         string path = Application.persistentDataPath + "/gameData.fun";
 
         if (File.Exists(path))

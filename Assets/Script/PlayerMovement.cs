@@ -30,19 +30,30 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !controller.isDead && !controller.isDoorOpen)
         {
             jump = true;
-            //AudioManager.instance.Play("Jump");
+            AudioManager.instance.Play("Jump");
             Jump();
         }
 
-        if (isFalling)
+        if (isFalling || jump && !isGrounded)
         {
-            //AudioManager.instance.StopPlay("Jump");
             jump = false;
+        }
+
+        if (!isFalling)
+        {
+            AudioManager.instance.Play("Land");
         }
 
         if (animator.GetFloat("Speed") == 0)
         {
             AudioManager.instance.Play("FootSteps");
+        }
+
+        if (controller.isDead
+            || controller.isHarmed
+            || controller.isDoorOpen)
+        {
+            AudioManager.instance.StopPlay("FootSteps");
         }
     }
 

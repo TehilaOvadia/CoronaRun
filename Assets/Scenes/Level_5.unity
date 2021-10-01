@@ -489,6 +489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneTransition
       objectReference: {fileID: 0}
+    - target: {fileID: 606445977179317280, guid: 322c9ba70d8dd465e85a8d1011e1b1f8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 606445977179317281, guid: 322c9ba70d8dd465e85a8d1011e1b1f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -960
@@ -1923,6 +1927,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06bc4dc472907405ba1b18072daa42a3, type: 3}
+--- !u!1 &701454344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3178121532562565712, guid: 06bc4dc472907405ba1b18072daa42a3, type: 3}
+  m_PrefabInstance: {fileID: 701454343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &701454345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701454344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46150f973cb044b5981e3b383bc2a359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 25
+  startWaitTime: 0
+  moveSpots: {fileID: 141894573}
+  minX: -33
+  maxX: 36
+  minY: 68
+  maxY: 200
 --- !u!1001 &706169501
 PrefabInstance:
   m_ObjectHideFlags: 0

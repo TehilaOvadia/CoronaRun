@@ -2230,6 +2230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrassSmallGround (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 228731936295099544, guid: 82b1c7f19b3c343cd91d087e3a444f46, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     - target: {fileID: 228731936295099547, guid: 82b1c7f19b3c343cd91d087e3a444f46, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.1

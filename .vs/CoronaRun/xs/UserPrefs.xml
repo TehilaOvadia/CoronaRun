@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{1FBE9EF2-2974-6E61-FC57-C7ED5B842F7C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/CharacterController2D.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/LevelManager.cs">
     <Files>
-      <File FileName="Assets/Script/LevelManager.cs" Line="14" Column="27" />
-      <File FileName="Assets/Script/CharacterController2D.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/PlayerMovement.cs" />
-      <File FileName="Assets/Script/GameOverScreen.cs" />
-      <File FileName="Assets/Script/MainMenuScreen.cs" />
+      <File FileName="Assets/Script/MainMenuScreen.cs" Line="24" Column="43" />
+      <File FileName="Assets/Script/LevelManager.cs" Line="103" Column="26" />
+      <File FileName="Assets/Script/SettingMenu.cs" Line="32" Column="41" />
+      <File FileName="Assets/Script/AudioManager.cs" Line="38" Column="17" />
+      <File FileName="Assets/Script/SceneTransition.cs" Line="31" Column="45" />
+      <File FileName="Assets/Script/GameOverScreen.cs" Line="4" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +14,7 @@
           <Node name="CoronaRun" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
-                <Node name="CharacterController2D.cs" selected="True" />
+                <Node name="LevelManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>

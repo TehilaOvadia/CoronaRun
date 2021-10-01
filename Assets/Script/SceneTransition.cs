@@ -12,16 +12,23 @@ public class SceneTransition : MonoBehaviour
     public Text levelNameShadow;
     public float transitionTime = 1f;
 
+    private int sceneIndex;
+
     private void Awake()
     {
-        if(SceneManager.GetActiveScene().buildIndex == 0)
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        if (sceneIndex == 0)
         {
             levelName.text = "ESCAPE VIRUS";
-        } else if(SceneManager.GetActiveScene().buildIndex > 0)
+        } else if(sceneIndex > 0 && sceneIndex < 11)
         {
             levelName.text = "LEVEL " + SceneManager.GetActiveScene().buildIndex.ToString();
             levelNameIn.text = "Level " + SceneManager.GetActiveScene().buildIndex.ToString();
             levelNameShadow.text = "Level " + SceneManager.GetActiveScene().buildIndex.ToString();
+        }else if(sceneIndex == 11)
+        {
+            levelName.text = "COMING SOON...";
         }
     }
 

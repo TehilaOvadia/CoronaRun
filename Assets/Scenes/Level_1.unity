@@ -782,6 +782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallVirusGFX
       objectReference: {fileID: 0}
+    - target: {fileID: 8996086164385746405, guid: 0bce89fd2edd049ffb241c28d216f400, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bce89fd2edd049ffb241c28d216f400, type: 3}
 --- !u!1001 &416548829
@@ -3639,6 +3643,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 7645479288829747062}
+    - target: {fileID: 6304143939737582554, guid: 6d6c4432ee71241679e361d9b6f7a363, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6448740093999119711, guid: 6d6c4432ee71241679e361d9b6f7a363, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00000023841858
@@ -3683,7 +3691,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7526529860401621223, guid: 6d6c4432ee71241679e361d9b6f7a363, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6d6c4432ee71241679e361d9b6f7a363, type: 3}
 --- !u!1001 &4398313291972621836
 PrefabInstance:
@@ -4080,6 +4089,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7119739844294685760, guid: afb4ef0e4a4c6475fb94223f17c8125d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7119739844294685766, guid: afb4ef0e4a4c6475fb94223f17c8125d, type: 3}
+      propertyPath: sounds.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7119739844294685766, guid: afb4ef0e4a4c6475fb94223f17c8125d, type: 3}
+      propertyPath: sounds.Array.data[0].loop
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7119739844294685767, guid: afb4ef0e4a4c6475fb94223f17c8125d, type: 3}

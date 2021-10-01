@@ -14,9 +14,12 @@ public class LevelManager : MonoBehaviour
     public Text lifeAmount;
 
     public float respawnDelay;
+
     public int healthAmount;
     public int levelNum;
     public bool hasSyringe;
+    public float bgVolume;
+    public float effectVolume;
 
     private void Awake()
     {
@@ -31,11 +34,6 @@ public class LevelManager : MonoBehaviour
         //Debug.Log("Has syringe: " + hasSyringe);
         //Debug.Log("Level num: " + levelNum);
     }
-
-    //private void Start()
-    //{
-    //    sceneTransition.SetUp();
-    //}
 
     public void SaveGameData()
     {
@@ -95,9 +93,10 @@ public class LevelManager : MonoBehaviour
 
     public IEnumerator NextLevelCoroutine()
     {
-        levelNum += 1;
+        levelNum = SceneManager.GetActiveScene().buildIndex +1;
         SaveGameData();
         gamePlayer.isDoorOpen = true;
+
         yield return new WaitForSeconds(3f);
         //Scene transition
         endSceneTransition.EndScene();

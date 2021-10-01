@@ -31,6 +31,8 @@ public class CharacterController2D : MonoBehaviour
 		{
 			enemyHasCollide = true;
 
+			AudioManager.instance.Play("Harmed");
+
 			if (gameLevelManager.hasSyringe)
             {
 				syringeManager.SetUpSyringe(false);
@@ -73,13 +75,18 @@ public class CharacterController2D : MonoBehaviour
 			case "Checkpoint":
 				if(respawnPoint.y < other.transform.position.y)
                 {
+					AudioManager.instance.Play("Checkpoint");
 					respawnPoint = other.transform.position;
                 }
 				break;
 			case "Door":
+				AudioManager.instance.Play("DoorPass");
+
 				gameLevelManager.NextLevel();
 				break;
 			case "Syringe":
+				AudioManager.instance.Play("Collect");
+
 				syringeManager.SetUpSyringe(true);
 				break;
 		}
