@@ -71,15 +71,8 @@ public class AudioManager : MonoBehaviour
 
         foreach (Sound s in sounds)
         {
-            //s.source = gameObject.AddComponent<AudioSource>();
             s.source.volume = volume;
             s.volume = volume;
-
-            Debug.Log("s.source.name: " + s.source.name);
-            Debug.Log("s.source.volume: " + s.source.volume);
-            Debug.Log("s.name: " + s.name);
-            Debug.Log("s.volume: " + s.volume);
-            Debug.Log("volume: " + volume);
         }
     }
 }

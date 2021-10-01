@@ -20,6 +20,14 @@ public class MainMenuScreen : MonoBehaviour
 
         if (gameLevelManager != null)
         {
+            if(gameLevelManager.levelNum > 11)
+            {
+                gameLevelManager.levelNum = 11;
+            }else if(gameLevelManager.levelNum < 1)
+            {
+                gameLevelManager.levelNum = 1;
+            }
+
             //Scene transition
             endSceneTransition.EndScene();
 

@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class SettingMenu : MonoBehaviour
 {
-    //public AudioMixer audioMixer;
     LevelManager gameLevelManager;
 
     public Slider slider;
+    public Text restartSubTxt;
+    public Button restartBtn;
 
     private void Awake()
     {
@@ -21,13 +21,25 @@ public class SettingMenu : MonoBehaviour
         gameLevelManager.LoadGameData();
 
         slider.value = gameLevelManager.effectVolume;
-        //SetVolume(gameLevelManager.effectVolume);
+
+        if(gameLevelManager.levelNum <= 1)
+        {
+            restartBtn.interactable = false;
+
+            restartSubTxt.text = "";
+        }
+        else
+        {
+            restartBtn.interactable = true;
+
+            restartSubTxt.text = "";
+        }
     }
 
-    public void SetBGVolume(float volume)
-    {
+    //public void SetBGVolume(float volume)
+    //{
         //audioMixer.SetFloat("bgVolume", volume);
-    }
+    //}
 
     public void SetEffectVolume(float volume)
     {
@@ -43,5 +55,8 @@ public class SettingMenu : MonoBehaviour
         gameLevelManager.levelNum = 1;
 
         gameLevelManager.SaveGameData();
+
+        restartBtn.interactable = false;
+        restartSubTxt.text = "Restart succesfuly! Enjoy again";
     }
 }
