@@ -18,7 +18,6 @@ public class LevelManager : MonoBehaviour
     public int healthAmount;
     public int levelNum;
     public bool hasSyringe;
-    public float bgVolume;
     public float effectVolume;
 
     private void Awake()
@@ -47,6 +46,7 @@ public class LevelManager : MonoBehaviour
         healthAmount = data.healthAmount;
         levelNum = data.levelNum;
         hasSyringe = data.hasSyringe;
+        effectVolume = data.effectVolume;
     }
 
     private void Update()

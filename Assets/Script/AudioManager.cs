@@ -7,10 +7,14 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     public Sound[] sounds;
-    
+
+    LevelManager gameLevelManager;
+
     void Awake()
     {
-        if(instance == null)
+        gameLevelManager = FindObjectOfType<LevelManager>();
+
+        if (instance == null)
         {
             instance = this;
         }
@@ -32,7 +36,9 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        //Play("Theme");
+        gameLevelManager.LoadGameData();
+
+        SetVolume(gameLevelManager.effectVolume);
     }
 
     public void Play(string name)
@@ -45,7 +51,6 @@ public class AudioManager : MonoBehaviour
         }
             
         s.source.Play();
-        //Debug.Log("Name: " + name);
     }
 
     public void StopPlay(string name)
@@ -58,19 +63,23 @@ public class AudioManager : MonoBehaviour
         }
 
         s.source.Stop();
-        Debug.Log("stop Name: " + name);
     }
 
-    public void SetVolume(string name)
+    public void SetVolume(float volume)
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
-        {
-            Debug.LogWarning("The sound: " + name + " not found!");
-            return;
-        }
+        gameLevelManager.effectVolume = volume;
 
-        s.source.Play();
-        //Debug.Log("Name: " + name);
+        foreach (Sound s in sounds)
+        {
+            //s.source = gameObject.AddComponent<AudioSource>();
+            s.source.volume = volume;
+            s.volume = volume;
+
+            Debug.Log("s.source.name: " + s.source.name);
+            Debug.Log("s.source.volume: " + s.source.volume);
+            Debug.Log("s.name: " + s.name);
+            Debug.Log("s.volume: " + s.volume);
+            Debug.Log("volume: " + volume);
+        }
     }
 }
