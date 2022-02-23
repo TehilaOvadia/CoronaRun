@@ -23,9 +23,18 @@ public class MainMenuScreen : MonoBehaviour
             if(gameLevelManager.levelNum > 11)
             {
                 gameLevelManager.levelNum = 11;
-            }else if(gameLevelManager.levelNum < 1)
+                gameLevelManager.SaveGameData();
+            }
+            else if(gameLevelManager.levelNum < 1)
             {
                 gameLevelManager.levelNum = 1;
+                gameLevelManager.SaveGameData();
+            }
+
+            if(gameLevelManager.healthAmount <= 0)
+            {
+                gameLevelManager.healthAmount = 5;
+                gameLevelManager.SaveGameData();
             }
 
             //Scene transition
